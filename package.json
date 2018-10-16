@@ -1,0 +1,35 @@
+{
+  "name": "rest-api-sqlite",
+  "version": "1.0.0",
+  "description": "Express - Rest - SQlite experiment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbroberg/rest-api-sqlite.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "sqlite",
+    "express",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Christian Broberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cbroberg/rest-api-sqlite/issues"
+  },
+  "homepage": "https://github.com/cbroberg/rest-api-sqlite#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "epilogue": "^0.7.1",
+    "express": "^4.16.4",
+    "sequelize": "^4.39.1",
+    "sqlite3": "^4.0.2",
+    "util": "^0.11.0"
+  }
+}
