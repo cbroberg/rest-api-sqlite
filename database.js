@@ -1,3 +1,5 @@
+// http://docs.sequelizejs.com/manual/tutorial/models-definition.html
+
 const Sequelize = require('sequelize')
 const epilogue = require('epilogue')
 
@@ -34,7 +36,17 @@ const initializeDatabase = async (app) => {
 	// })
 
 	part = await Part.findOne()
-	console.log(part.get('name'));
+	console.log(part.get('name'))
+
+	// Quick query example using promise
+	database.query("SELECT * FROM parts").then(myTableRows => {
+		console.log(myTableRows)
+	})
+
+	// Quick query example using async
+	query = await database.query("SELECT * FROM parts")
+	console.log(query)
+
 }
 
 module.exports = initializeDatabase
